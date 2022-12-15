@@ -1,0 +1,34 @@
+/* custom css */
+/* vstack and hstack */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(‘webfont.eot’); 
+    src: url(‘webfont.eot?#iefix’) format(‘embedded-opentype’),
+        url(‘webfont.svg#svgFontName’) format(‘svg’),
+        url(‘webfont.woff’) format(‘woff’),
+        url(‘webfont.ttf’)  format(‘truetype’);
+    }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+.hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+/* justify-content: center; */
+  }
+.vstack {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-self: stretch;
+  }
