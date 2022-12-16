@@ -39,7 +39,7 @@ include '../header.php';
             <p class="fw-bolder">200513236</p>
         </div>
         <div class="col-6">
-            <small>Course</small>
+            <small>Department</small>
             <p class="fw-bolder">BSIT</p>
         </div>
     </div>
