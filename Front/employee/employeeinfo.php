@@ -24,7 +24,7 @@ include '../header.php';
             <img src="../_assets/images/logo.png" alt="logo" width="50">
         </div>
     </div>
-    <form action="../../Back/dbHelper.php" method="POST" class="d-grid gap-3 position-relative">
+    <form action="../../Back/dbhelper.php" method="POST" class="d-grid gap-3 position-relative">
         <input type="text" class = "form-control" name="firstname" placeholder="First Name" required>
         <input type="text" class = "form-control" name="lastname" placeholder="Last Name" required>
         <div class="row">
@@ -55,7 +55,7 @@ include '../header.php';
         <input type="text" class = "form-control" name="philhealth" placeholder="PhilHealth" required>
             </div>
         </div>
-        <input type="file" id="wizard-picture" class="" accept="image/*" name="selfie">
+        <input type="file" class = "form-control mt-1" name="upload" required>
         <small class="position-absolute" style="bottom:3.5rem;">upload selfie</small>
         <div class="row justify-content-center">
             <div class="col-10 text-center">

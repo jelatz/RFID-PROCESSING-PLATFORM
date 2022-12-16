@@ -19,7 +19,7 @@ include '../../Back/config.php';
 
     <h2 class="p-3 fw-bold" style="color:rgba(47, 42, 84, 1) !important;">STUDENT PERSONAL INFORMATION</h2>
     
-    <form action="../../Back/dbHelper.php" method="POST" class="d-grid gap-3" enctype="multipart/form-data">
+    <form action="../../Back/dbHelper.php" method="POST" class="d-grid gap-3 position-relative" enctype="multipart/form-data">
         <input type="text" class = "form-control" name="firstname" placeholder="First Name" required>
         <input type="text" class = "form-control" name="lastname" placeholder="Last Name" required>
         <div class="row">
@@ -35,9 +35,9 @@ include '../../Back/config.php';
         <input type="text" class = "form-control" name="contPer" placeholder="Contact Person" required>
         <input type="text" class = "form-control" name="contNum" placeholder="Contact Number" required>
         <input type="file" id="wizard-picture" class="" accept="image/*" name="studyload">
-        <small class="position-absolute" style="bottom:8.4rem;">upload selfie</small>
+        <small class="position-relative" style="bottom:1rem;">upload selfie</small>
         <input type="file" class = "form-control mt-1" name="selfie" required>
-        <small class="position-absolute" style="bottom:4.8rem;">upload study load</small>
+        <small class="position-relative" style="bottom: 1rem;">upload study load</small>
         <button type="submit" name="submit" class="text-white mt-3 fw-bolder" style="background-color: rgba(47, 42, 84, 1) !important; border-radius:15px !important;">Submit</button>
     </form>
     </div>

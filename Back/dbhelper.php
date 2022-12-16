@@ -26,7 +26,6 @@ if (isset($_POST['submit'])){
 
 
         if($insert){
-            echo "<script>alert('pakyu!');</script>";
             header('Location:../Front/student/studentqr.php?id='.$idNumber.'');
             exit();
         }
@@ -34,6 +33,7 @@ if (isset($_POST['submit'])){
     }
     }
 
+    
 // EMPLOYEE
 if(isset($_POST['submitEmployee'])){
     $firstname = $_POST['firstname'];
@@ -48,11 +48,11 @@ if(isset($_POST['submitEmployee'])){
     $pagibig = $_POST['pagibig'];
     $tin = $_POST['tin'];
     $philhealth = $_POST['philhealth'];
-    $upload1 = time() . '_' . $_FILES['selfie']['name'];
+    $upload1 = time() . '_' . $_FILES['upload']['name'];
     $target1 = '../Front/_assets/images/uploads/' . $upload1;
     $refNum = rand();
 
-    if(move_uploaded_file($_FILES['selfie']['tmp_name'], $target1)){
+    if(move_uploaded_file($_FILES['upload']['tmp_name'], $target1)){
     
     $insert = mysqli_query($conn, "INSERT INTO employee (id_number, lastname, firstname, birthdate, address, department, philhealth, pagibig, sss, tin, selfie, status, contact_per, contact_num) VALUES ('$idNumber', '$lastname', '$firstname', '$birthdate', '$address', '$department', '$philhealth', '$pagibig', '$sss', '$tin', '$target1', '$contPer', '$contNum','$refNum')");
 
